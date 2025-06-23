@@ -1,0 +1,173 @@
+/* Контейнер input + кнопка */
+.timerblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.timerblock .input-wrap {
+  display: flex;
+  align-items: center;
+  width: 355px;
+}
+
+/* Поле ввода */
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+/* Кнопка */
+button[data-start] {
+  border-radius: 8px;
+  width: 75px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+  padding: 0;
+}
+
+/* Состояния кнопки */
+button[data-start]:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+button[data-start]:not(:disabled) {
+  background: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[data-start]:not(:disabled):hover {
+  background: #6c8cff;
+  color: #fff;
+}
+
+/* Таймер */
+.timer {
+  margin-top: 32px;
+  width: 346px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer .value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 0;
+}
+
+.timer .label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.flatpickr-calendar {
+  background: #f5f5f5 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin-top: 8px !important;
+  margin-left: -18px;
+}
+.flatpickr-calendar.arrowTop:before {
+  border-bottom-color: #ffffff !important;
+}
+.flatpickr-months .flatpickr-month {
+  color: #333 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  text-align: center !important;
+}
+.flatpickr-day {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.flatpickr-day.today {
+  border: 1px solid #4e75ff !important;
+  border-radius: 100% !important;
+}
+.flatpickr-day.selected {
+  border: 1px solid #4e75ff !important;
+  background: #4e75ff !important;
+  border-radius: 100% !important;
+}
+
+.flatpickr-day:hover {
+  background: #c1c1c1 !important;
+  border-radius: 100% !important;
+}
+.flatpickr-time {
+  border-top: 1px solid #c1c1c1 !important;
+  /* padding: 16px 0px 0px 0px; */
+  width: 248px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+/* форма оверрайд */
+.flatpickr-input {
+  border: 1px solid #808080 !important;
+  border-radius: 4px !important;
+  padding: 8px 12px !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  color: #2e2f42 !important ;
+  outline: none !important;
+  transition: border 0.2s ease, color 0.2s ease;
+}
+
+/* hover */
+.flatpickr-input:hover {
+  border: 1px solid #000000 !important;
+}
+
+/* focus (active) */
+.flatpickr-input:focus {
+  border: 1px solid #4e75ff !important;
+  color: #000000 !important;
+}
+
+/* disabled */
+.flatpickr-input:disabled {
+  border: 1px solid #808080 !important;
+  background-color: #f5f5f5 !important;
+  color: #808080 !important;
+}
+
+/* toast всплывашка */
+.iziToast-close {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M1 1 L11 11 M11 1 L1 11' stroke='white' stroke-width='1'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  opacity: 1 !important;
+  width: 42px !important;
+  height: 100% !important;
+}
