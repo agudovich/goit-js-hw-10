@@ -59,7 +59,7 @@ iziToast.settings({
   close: true,
   color: '#ef4040',
   progressBarColor: '#b51b1b',
-  iconUrl: '../img/bi_x-octagon.svg',
+  iconUrl: '${import.meta.env.BASE_URL}img/bi_x-octagon.svg',
   iconColor: '#fff',
   transitionIn: 'fadeInDown',
 });
